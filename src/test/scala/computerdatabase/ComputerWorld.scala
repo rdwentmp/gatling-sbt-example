@@ -1,16 +1,16 @@
 package computerdatabase
 
+import computerdatabase.util.TestConfig
+
 import scala.concurrent.duration._
-
 import java.util.concurrent.ThreadLocalRandom
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class ComputerWorld extends Simulation {
+class ComputerWorld extends Simulation with TestConfig{
 
   val httpProtocol = http
-    .baseUrl("http://computer-database.gatling.io")
+    .baseUrl(url)
     .acceptHeader("""text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8""")
     .acceptEncodingHeader("""gzip, deflate""")
     .acceptLanguageHeader("""en-gb,en;q=0.5""")
