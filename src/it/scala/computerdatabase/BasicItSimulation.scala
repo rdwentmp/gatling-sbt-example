@@ -1,13 +1,15 @@
 package computerdatabase
 
+import computerdatabase.util.TestConfig
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
+
 import scala.concurrent.duration._
 
-class BasicItSimulation extends Simulation {
+class BasicItSimulation extends Simulation with TestConfig {
 
   val httpProtocol = http
-    .baseUrl("http://computer-database.gatling.io") // Here is the root for all relative URLs
+    .baseUrl(url) // Here is the root for all relative URLs
     .acceptHeader("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8") // Here are the common headers
     .acceptEncodingHeader("gzip, deflate")
     .acceptLanguageHeader("en-US,en;q=0.5")
