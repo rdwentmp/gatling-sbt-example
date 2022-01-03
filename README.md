@@ -29,7 +29,7 @@ Run a single simulation
 -----------------------
 
 ```bash
-> gatling:testOnly computerdatabase.BasicSimulation
+> gatling:testOnly examplesimulation.BasicSimulation
 ```
 
 List all tasks
