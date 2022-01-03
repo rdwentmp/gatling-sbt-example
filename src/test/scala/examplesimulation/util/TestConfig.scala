@@ -1,4 +1,4 @@
-package computerdatabase.util
+package examplesimulation.util
 
 trait TestConfig {
   final lazy val url = sys.env.apply("API_BASE_URL")

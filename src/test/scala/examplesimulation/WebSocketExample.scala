@@ -1,4 +1,4 @@
-package computerdatabase
+package examplesimulation
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef.{http, _}

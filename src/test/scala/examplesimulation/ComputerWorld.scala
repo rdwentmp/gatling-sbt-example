@@ -1,6 +1,6 @@
-package computerdatabase
+package examplesimulation
 
-import computerdatabase.util.TestConfig
+import examplesimulation.util.TestConfig
 
 import scala.concurrent.duration._
 import java.util.concurrent.ThreadLocalRandom

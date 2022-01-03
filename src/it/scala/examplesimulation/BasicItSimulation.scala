@@ -1,6 +1,6 @@
-package computerdatabase
+package examplesimulation
 
-import computerdatabase.util.TestConfig
+import examplesimulation.util.TestConfig
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
